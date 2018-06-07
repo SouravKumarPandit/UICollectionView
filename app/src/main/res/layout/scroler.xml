@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/image_tester"
+        android:layout_height="400dp" />
+
+<!--
+    <ScrollView
+        android:id="@id/AGVBalanceScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:fadeScrollbars="true"
+        android:overScrollMode="never"
+        android:scrollbarDefaultDelayBeforeFade="500"
+        android:scrollbarFadeDuration="500"
+        android:scrollbarSize="3.0dip"
+        android:scrollbarThumbVertical="@drawable/rounded_corner">
+
+        <LinearLayout
+            android:id="@id/AGVTopContainerWithShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@id/AGVTopContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="120.0dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip">
+
+                    <LinearLayout
+                        android:id="@id/AGVYourShareContainer"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@id/AGVShowYourShare"
+                                android:layout_width="48.0dip"
+                                android:layout_height="48.0dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ripple_white"
+                                android:src="@drawable/ic_action_user2_dark" />
+
+                            <ImageView
+                                android:layout_width="48.0dip"
+                                android:layout_height="48.0dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ring_bg" />
+
+                            <View
+                                android:layout_width="64.0dip"
+                                android:layout_height="64.0dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/fab_shadow_mini" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@id/AGVYourShare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:text="Your Share"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/SmallestText" />
+
+                        <TextView
+                            android:id="@id/AGVYourShareAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/SmallText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/AGVYouSpentContainer"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@id/AGVShowSpends"
+                                android:layout_width="48.0dip"
+                                android:layout_height="48.0dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ripple_white"
+                                android:src="@drawable/ic_action_contribution2_dark" />
+
+                            <ImageView
+                                android:layout_width="48.0dip"
+                                android:layout_height="48.0dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ring_bg" />
+
+                            <View
+                                android:layout_width="64.0dip"
+                                android:layout_height="64.0dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/fab_shadow_mini" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@id/AGVYouSpent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:text="Your Contribution"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/SmallestText" />
+
+                        <TextView
+                            android:id="@id/AGVYouSpentAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/SmallText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/AGVYouOweContainer"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@id/AGVShowDetails"
+                                android:layout_width="48.0dip"
+                                android:layout_height="48.0dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ripple_white"
+                                android:src="@drawable/ic_action_split_balance_dark" />
+
+                            <ImageView
+                                android:layout_width="48.0dip"
+                                android:layout_height="48.0dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ring_bg" />
+
+                            <View
+                                android:layout_width="64.0dip"
+                                android:layout_height="64.0dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/fab_shadow_mini" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@id/AGVYouOwe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:text="You owe"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/SmallestText" />
+
+                        <TextView
+                            android:id="@id/AGVYouOweAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/SmallText" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/AGVGroupMembers"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="10.0dip"
+                    android:paddingLeft="16.0dip"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="10.0dip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/SmallText"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@id/AGVBalanceListContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@id/AGVMyBalanceLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blacklighttransp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="8.0dip"
+                            android:paddingRight="10.0dip">
+
+                            <ImageButton
+                                android:id="@id/AGVMyBalanceExpand"
+                                android:layout_width="40.0dip"
+                                android:layout_height="40.0dip"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:padding="5.0dip"
+                                android:rotation="90.0"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_action_next_item_dark"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/my_settlements"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/SmallText" />
+
+                            <ImageView
+                                android:id="@id/AGVSmartSettleInfo"
+                                android:layout_width="32.0dip"
+                                android:layout_height="32.0dip"
+                                android:layout_gravity="center|right"
+                                android:layout_marginLeft="8.0dip"
+                                android:background="@drawable/ic_action_info_outline_dark"
+                                android:scaleType="center" />
+                        </LinearLayout>
+
+                        <com.linearlistview.LinearListView
+                            android:id="@id/AGVMyBalanceList"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blacktransp"
+                            android:orientation="vertical"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@id/AGVOthersBalanceLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:background="@color/blacktransp" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/blacklighttransp"
+                                android:orientation="horizontal"
+                                android:paddingLeft="8.0dip">
+
+                                <ImageButton
+                                    android:id="@id/AGVOthersBalanceExpand"
+                                    android:layout_width="40.0dip"
+                                    android:layout_height="40.0dip"
+                                    android:background="@null"
+                                    android:clickable="false"
+                                    android:padding="5.0dip"
+                                    android:rotation="90.0"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_action_next_item_dark"
+                                    android:visibility="visible" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/others_settlements"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/SmallText" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <com.linearlistview.LinearListView
+                            android:id="@id/AGVOthersBalanceList"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blacktransp"
+                            android:orientation="vertical"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@id/AGVYouSpentList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blacklighttransp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@id/AGVYourContributionContainer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:src="@drawable/ic_action_contribution_dark" />
+
+                        <TextView
+                            android:id="@id/AGVYourContribution"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:text="You Paid in Group"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/MedText" />
+
+                        <TextView
+                            android:id="@id/AGVYourContributionAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/MedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/AGVYouSettledContainer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal"
+                        android:paddingLeft="14.0dip"
+                        android:paddingRight="10.0dip">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_action_paid_dark" />
+
+                        <TextView
+                            android:id="@id/AGVYouSettled"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:text="You Sent"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/MedText" />
+
+                        <TextView
+                            android:id="@id/AGVYouSettledAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/MedText" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>-->
+</LinearLayout>

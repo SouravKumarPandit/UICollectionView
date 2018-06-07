@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9d9"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    tools:context="com.centrahub.focus.sourav.uicollectionview.MainActivity">
+
+        <com.centrahub.focus.sourav.uicollectionview.dounutView.DonutChart
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:elevation="5dp"
+            app:radius="100dp" />
+        <com.centrahub.focus.sourav.uicollectionview.rectangleshadow.ShadowedView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:radius="50dp">
+        </com.centrahub.focus.sourav.uicollectionview.rectangleshadow.ShadowedView>
+    <!--
+            <com.centrahub.focus.sourav.uicollectionview.rectangleshadow.ShadowedFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Hello"
+                app:radius="100dp"
+
+                />
+    -->
+<!--
+    <com.centrahub.focus.sourav.uicollectionview.HexagonalButton.HexaButton
+        android:id="@+id/get_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:minHeight="0dp"
+        android:minWidth="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Get Started"
+        android:textColor="#ffffff"
+        app:radius="100dp" />-->
+
+
+<!--
+    <com.centrahub.focus.sourav.uicollectionview.multiarcframe.MultiArcView
+        android:layout_width="match_parent"
+        app:radius="100dp"
+        android:layout_margin="10dp"
+        android:layout_height="300dp" />-->
+
+
+
+
+</LinearLayout>

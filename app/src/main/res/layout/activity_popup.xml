@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#449f80"
+    android:orientation="vertical">
+<!--
+    <com.centrahub.focus.sourav.uicollectionview.poupsActivity.PopUpLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <include layout="@layout/sort_popup_layout"/>
+    </com.centrahub.focus.sourav.uicollectionview.poupsActivity.PopUpLinearLayout>-->
+
+    <TextView
+        android:id="@+id/popup_click_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/popup_top_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="top mid"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/popup_bottom_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Bottom mid"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/popup_left_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Top left"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/popup_right_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Top Right"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/popup_mid_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="MID Left"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/popup_mid_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_purple"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Mid Right"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/popup_end_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Bottom Left"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/popup_end_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Bottom Right"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
